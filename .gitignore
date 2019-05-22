@@ -20,3 +20,4 @@
 !CMakeLists.txt
 !package.xml
 !install_kinetic.sh
+!init_catkin_ws.sh
