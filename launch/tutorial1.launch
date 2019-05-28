@@ -1,16 +1,7 @@
 <launch>
-
   <group ns="tutorial2">
-    <node pkg="beginners_tutorials" name="talker0" type="talker"/>
-    <node pkg="beginners_tutorials" name="listener0" type="listener"/>
-    <node pkg="beginners_tutorials" name="listener1" type="listener"/>
+    <node pkg="beginner_tutorials" name="talker0" type="talker"/>
+    <node pkg="beginner_tutorials" name="listener0" type="listener"/>
+    <node pkg="beginner_tutorials" name="listener1" type="listener"/>
   </group>
-  
-  
-<!-- 
-  <node pkg="beginners_tutorials" name="listener2" type="listener">
-    <remap from="input" to="turtlesim1/turtle1"/>
-    <remap from="output" to="turtlesim2/turtle1"/>
-  </node> -->
-
 </launch>

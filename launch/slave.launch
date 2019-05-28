@@ -1,0 +1,9 @@
+<launch>
+    <node pkg="beginner_tutorials" name="slave_talker" type="talker">
+      <remap from="chatter" to="slave/chatter"/>
+    </node>
+
+    <node pkg="beginner_tutorials" name="slave_listener" type="listener">
+      <remap from="chatter" to="master/chatter"/>
+    </node>
+</launch>
