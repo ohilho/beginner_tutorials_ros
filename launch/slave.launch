@@ -13,5 +13,6 @@
       <param name="remote_host" type="str" value="115.145.159.90"/>
       <remap from="chatter" to="slave/chatter"/>
     </node>
+    <node pkg="rqt_graph" name="rqt_graph" type="rqt_graph" output="screen"/>
 
 </launch>
