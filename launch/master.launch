@@ -4,6 +4,13 @@
     </node>
 
     <node pkg="beginner_tutorials" name="master_listener" type="listener">
-      <remap from="chatter" to="slave/chatter"/>
+      <remap from="chatter" to="proxy/chatter"/>
+    </node>
+
+    <node pkg="proxy" name="master_proxy" type="proxy_node" output="screen">
+      <param name="local_port" type="int" value="15150"/>
+      <param name="remote_port" type="int" value="15150"/>
+      <param name="remote_host" type="str" value="127.0.0.1"/>
+      <remap from="chatter" to="master/chatter"/>
     </node>
 </launch>
